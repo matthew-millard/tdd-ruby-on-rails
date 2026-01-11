@@ -6,5 +6,9 @@ FactoryBot.define do
     sequence(:summary) { |n| "Page Summary #{n}" }
     sequence(:content) { |n| "Page Content #{n}" }
     published { false }
+
+    trait :published do
+      published { true }
+    end
   end
 end
